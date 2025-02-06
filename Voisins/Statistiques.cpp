@@ -10,13 +10,16 @@ int CalculerMoyenne(vector<int> tableauNombre)
 	int moyenne{ 0 };
 	int total{ 0 };
 
+	// Additionne tout les nombres et le met dans la variable total
 	for (int i = 0; i < tableauNombre.size(); i++) 
 	{
 		total += tableauNombre[i];
 	}
 
+	// Calcule de la moyenne
 	moyenne = total / tableauNombre.size();
 
+	// Retourne la moyenne
 	return moyenne;
 }
 
@@ -24,9 +27,10 @@ int CalculerMedianne(vector<int> tableauNombre)
 {
 	int medianne{ 0 };
 
+	// met les nombers du tableau en ordre croissant
 	sort(tableauNombre.begin(), tableauNombre.end());
 
-	if (tableauNombre.size() % 2 == 0) 
+	if (tableauNombre.size() % 2 == 0) // Si le tableau est pair
 	{
 		int index{ 0 };
 
@@ -40,7 +44,7 @@ int CalculerMedianne(vector<int> tableauNombre)
 
 		medianne = medianne / 2;
 	}
-	else
+	else // Sinon
 	{
 		int index{ 0 };
 
