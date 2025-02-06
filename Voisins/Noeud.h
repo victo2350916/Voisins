@@ -3,7 +3,7 @@
 
 
 /// <summary>
-/// 
+/// Noeud pour faire une liste chainé de vecteurs avec la classe RessourceLoader.
 /// </summary>
 struct Noeud
 {
