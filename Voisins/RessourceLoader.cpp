@@ -3,7 +3,7 @@
 #include <sstream>
 #include <iostream>
 
-RessourceLoader::RessourceLoader(const string& file_path, bool load_on_init = false) : file_path(file_path) 
+RessourceLoader::RessourceLoader(const string& file_path, bool load_on_init) : file_path(file_path) 
 {
 
 	//seulement initier les données à la déclaration seulement si nécessaire
@@ -35,8 +35,7 @@ void RessourceLoader::loadData()
 				s.ignore();
 		}
 
-		//enlever la bool et ajouter le vecteur au data
-		row.pop_back();
+		//ajouter le vecteur au data
 		data.push_back(row);	
 	}
 }

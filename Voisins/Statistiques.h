@@ -31,7 +31,7 @@ int CalculerEcart(vector<int>);
 /// <param name="">Premier vecteur de nombre</param>
 /// <param name="">Deuxième vecteur de nombre</param>
 /// <returns>L'euclidienne</returns>
-double CalculerEuclidienne(vector<double>, vector<double>);
+double CalculerEuclidienne(vector<float>, vector<float>);
 
 /// <summary>
 /// Calcule la Manhatan entre deux vecteurs

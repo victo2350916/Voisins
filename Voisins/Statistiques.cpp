@@ -10,16 +10,13 @@ int CalculerMoyenne(vector<int> tableauNombre)
 	int moyenne{ 0 };
 	int total{ 0 };
 
-	// Additionne tout les nombres et le met dans la variable total
 	for (int i = 0; i < tableauNombre.size(); i++) 
 	{
 		total += tableauNombre[i];
 	}
 
-	// Calcule de la moyenne
 	moyenne = total / tableauNombre.size();
 
-	// Retourne la moyenne
 	return moyenne;
 }
 
@@ -27,10 +24,9 @@ int CalculerMedianne(vector<int> tableauNombre)
 {
 	int medianne{ 0 };
 
-	// met les nombers du tableau en ordre croissant
 	sort(tableauNombre.begin(), tableauNombre.end());
 
-	if (tableauNombre.size() % 2 == 0) // Si le tableau est pair
+	if (tableauNombre.size() % 2 == 0)
 	{
 		int index{ 0 };
 
@@ -77,7 +73,7 @@ int CalculerEcart(vector<int> tableauNombre)
 	return ecart;
 }
 
-double CalculerEuclidienne(vector<double> point1, vector<double> point2)
+double CalculerEuclidienne(vector<float> point1, vector<float> point2)
 {
 	double somme{ 0 };
 	double difference{ 0 };
